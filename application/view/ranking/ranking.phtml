@@ -1,3 +1,7 @@
+<div style="padding: 20px;">
 <?php foreach($offers as $item): ?>
-	<li><a href="/oferta/<?= $item->offer_id; ?>"><?= $item->offer_name; ?></a></li>
+    <div style="padding: 10px 20px;">
+        <a class="btn btn-block btn-lg btn-inverse" href="/oferta/<?= $item->offer_id; ?>"><?= $item->offer_name; ?></a>
+    </div>
 <?php endforeach; ?>
+</div>

@@ -1,32 +1,32 @@
 <form method="post">
-	<?php if(!$valid): ?>W formularzu znajduje się błąd. Popraw go i spróbuj ponownie.<?php endif; ?>
+	<?php if(!$valid): ?><div style="margin-top: 15px; margin-bottom: 15px; color:red;">W formularzu znajduje się błąd. Popraw go i spróbuj ponownie.</div><?php endif; ?>
 
 	<input type="hidden" name="application_offer" value="<?= $offer->offer_id; ?>">
 
 	<div>
-		<label for="firstname">Imię</label>
+		<label for="firstname" style="width: 80px;">Imię</label>
 		<input type="text" name="application_firstname" id="fistname" placeholder="Imię" required>
 	</div>
 	
 	<div>
-		<label for="lastname">Nazwisko</label>
+		<label for="lastname" style="width: 80px;">Nazwisko</label>
 		<input type="text" name="application_lastname" id="lastname" placeholder="Nazwisko" required>
 	</div>
 	
 	<div>
-		<label for="pesel">PESEL</label>
+		<label for="pesel" style="width: 80px;">PESEL</label>
 		<input type="text" name="application_pesel" id="pesel" placeholder="PESEL" required>
 	</div>
 	
 	<div>
-		<label for="email">Email</label>
+		<label for="email" style="width: 80px;">Email</label>
 		<input type="email" name="application_email" id="email" placeholder="Email" required>
 	</div>
 	
 	<div>
-		<label for="phone">Telefon</label>
+		<label for="phone" style="width: 80px;">Telefon</label>
 		<input type="text" name="application_phone" id="phone" placeholder="Telefon" required>
 	</div>
 	
-	<button type="submit">Wyślij wniosek</button>
+	<button type="submit" style="margin-top: 25px; margin-bottom: 25px;">Wyślij wniosek</button>
 </form>
